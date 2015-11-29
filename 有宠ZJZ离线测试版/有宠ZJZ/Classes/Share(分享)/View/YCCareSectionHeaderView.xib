@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YCCareSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vu7-Ea-N0X">
+                    <rect key="frame" x="10" y="5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="SLQ-TX-VyK"/>
+                        <constraint firstAttribute="width" constant="35" id="ttY-rb-cp8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71e-wM-sn2">
+                    <rect key="frame" x="55" y="5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eZo-VS-pow">
+                    <rect key="frame" x="107" y="5" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="jgN-8a-3tT"/>
+                        <constraint firstAttribute="height" constant="15" id="teL-af-pZh"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KBF-se-TQu" userLabel="dogIcon View">
+                    <rect key="frame" x="55" y="29" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="7ba-3n-pv6"/>
+                        <constraint firstAttribute="height" constant="15" id="EO6-BJ-VTj"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhh-hd-hpa" userLabel="关注">
+                    <rect key="frame" x="248" y="11" width="62" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="JAM-D5-WPn"/>
+                        <constraint firstAttribute="height" constant="29" id="SqW-C8-eUO"/>
+                    </constraints>
+                    <state key="normal" image="fy_attention"/>
+                    <connections>
+                        <action selector="attention" destination="iN0-l3-epB" eventType="touchUpInside" id="hhQ-A0-5Kr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拉布拉多犬" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z98-7E-XGj">
+                    <rect key="frame" x="80" y="29" width="60" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eZo-VS-pow" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="86l-9t-hgQ"/>
+                <constraint firstAttribute="centerY" secondItem="bhh-hd-hpa" secondAttribute="centerY" id="GJu-gP-0Yc"/>
+                <constraint firstItem="Z98-7E-XGj" firstAttribute="leading" secondItem="KBF-se-TQu" secondAttribute="trailing" constant="10" id="MXL-87-8dY"/>
+                <constraint firstItem="Z98-7E-XGj" firstAttribute="top" secondItem="71e-wM-sn2" secondAttribute="bottom" constant="3" id="Uwn-DX-S3H"/>
+                <constraint firstItem="71e-wM-sn2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Wea-TL-mpe"/>
+                <constraint firstItem="KBF-se-TQu" firstAttribute="leading" secondItem="Vu7-Ea-N0X" secondAttribute="trailing" constant="10" id="ZUV-th-1Gv"/>
+                <constraint firstItem="Vu7-Ea-N0X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="d4t-eh-e7g"/>
+                <constraint firstItem="71e-wM-sn2" firstAttribute="leading" secondItem="Vu7-Ea-N0X" secondAttribute="trailing" constant="10" id="eWh-iq-C8N"/>
+                <constraint firstItem="Vu7-Ea-N0X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="kvq-67-CrB"/>
+                <constraint firstItem="eZo-VS-pow" firstAttribute="leading" secondItem="71e-wM-sn2" secondAttribute="trailing" constant="10" id="l82-gW-YFm"/>
+                <constraint firstItem="KBF-se-TQu" firstAttribute="top" secondItem="71e-wM-sn2" secondAttribute="bottom" constant="3" id="oTc-hp-D0W"/>
+                <constraint firstAttribute="trailing" secondItem="bhh-hd-hpa" secondAttribute="trailing" constant="10" id="wDg-jP-TaH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="attentionView" destination="bhh-hd-hpa" id="ebA-hp-nLZ"/>
+                <outlet property="dogIconView" destination="KBF-se-TQu" id="Zdy-q3-ctF"/>
+                <outlet property="iconView" destination="Vu7-Ea-N0X" id="aJg-q8-mFW"/>
+                <outlet property="nameView" destination="71e-wM-sn2" id="aKt-Il-ytM"/>
+                <outlet property="vipView" destination="eZo-VS-pow" id="Gyv-CB-bBy"/>
+            </connections>
+            <point key="canvasLocation" x="375" y="321"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fy_attention" width="62" height="29"/>
+    </resources>
+</document>

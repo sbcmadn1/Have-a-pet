@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YCShareNavigationBarView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PD6-GI-vm9">
+                    <rect key="frame" x="205" y="20" width="30" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="最新">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="new" destination="iN0-l3-epB" eventType="touchUpInside" id="IK6-pK-8JD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TC-jg-lWx">
+                    <rect key="frame" x="145" y="20" width="30" height="30"/>
+                    <state key="normal" title="关注">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="attention" destination="iN0-l3-epB" eventType="touchUpInside" id="Jst-op-s63"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBv-wn-JW1">
+                    <rect key="frame" x="285" y="26" width="20" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="GKT-a3-KNe"/>
+                        <constraint firstAttribute="width" constant="20" id="sgd-RJ-msk"/>
+                    </constraints>
+                    <state key="normal" image="camera">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO5-UZ-SHq">
+                    <rect key="frame" x="85" y="20" width="30" height="30"/>
+                    <state key="normal" title="精选">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="carefullyChosen" destination="iN0-l3-epB" eventType="touchUpInside" id="hCa-5R-Kb3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fBv-wn-JW1" firstAttribute="centerY" secondItem="PD6-GI-vm9" secondAttribute="centerY" id="2eY-E0-E9a"/>
+                <constraint firstAttribute="bottom" secondItem="7TC-jg-lWx" secondAttribute="bottom" constant="10" id="D0F-ap-Yv7"/>
+                <constraint firstItem="rO5-UZ-SHq" firstAttribute="top" secondItem="7TC-jg-lWx" secondAttribute="top" id="JJD-S0-sb1"/>
+                <constraint firstItem="PD6-GI-vm9" firstAttribute="top" secondItem="7TC-jg-lWx" secondAttribute="top" id="O61-81-sYA"/>
+                <constraint firstItem="PD6-GI-vm9" firstAttribute="leading" secondItem="7TC-jg-lWx" secondAttribute="trailing" constant="30" id="Qas-kU-dR9"/>
+                <constraint firstAttribute="trailing" secondItem="fBv-wn-JW1" secondAttribute="trailing" constant="15" id="brY-b8-3X0"/>
+                <constraint firstAttribute="centerX" secondItem="7TC-jg-lWx" secondAttribute="centerX" id="hyr-iL-qhQ"/>
+                <constraint firstItem="7TC-jg-lWx" firstAttribute="leading" secondItem="rO5-UZ-SHq" secondAttribute="trailing" constant="30" id="yii-oj-H07"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="attentionBtn" destination="7TC-jg-lWx" id="joO-8d-rtg"/>
+                <outlet property="chosenBtn" destination="rO5-UZ-SHq" id="UEN-2y-tkz"/>
+                <outlet property="firstNewBtn" destination="PD6-GI-vm9" id="cvg-OT-tIr"/>
+            </connections>
+            <point key="canvasLocation" x="369" y="313"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera" width="24" height="20"/>
+    </resources>
+</document>

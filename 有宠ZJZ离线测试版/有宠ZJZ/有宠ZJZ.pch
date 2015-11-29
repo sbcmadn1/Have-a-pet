@@ -1,0 +1,32 @@
+//
+//  有宠ZJZ.pch
+//  有宠ZJZ
+//
+//  Created by 王灿辉 on 15/9/21.
+//  Copyright (c) 2015年 王灿辉. All rights reserved.
+//
+
+#ifndef __ZJZ___ZJZ_pch
+#define __ZJZ___ZJZ_pch
+
+#import "UIImage+Extension.h"
+
+
+//屏幕宽度
+#define screenW [UIScreen mainScreen].bounds.size.width
+//屏幕高度
+#define screenH [UIScreen mainScreen].bounds.size.height
+
+//雅黑字体大小
+#define  YCWshySize(s) [UIFont fontWithName:@"MicrosoftYaHei" size:(s)]
+//屏幕是否is4inch
+#define is4inch [UIScreen mainScreen].bounds.size.height!=480.0
+
+//设置颜色
+#define YCColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(g)/255.0 alpha:1.0]
+
+#define YCSameColor(r)  YCColor(r,r,r)
+
+#import "YCSaveDataTool.h"
+
+#endif

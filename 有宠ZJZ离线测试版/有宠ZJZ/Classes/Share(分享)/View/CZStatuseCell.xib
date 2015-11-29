@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CZStatuseCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hz7-5D-xVd" userLabel="BGView1">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+                    <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5r-dL-u26" userLabel="BGView2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="340"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1kS-IF-cjk">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="A8k-M7-w87"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大家好！我是拉布拉多犬，请大家多多关注我的新影片，谢谢！谢谢！😊" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3S-71-D9b">
+                    <rect key="frame" x="10" y="310" width="388" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.50196081399917603" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="x5r-dL-u26" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3GQ-HK-qRY"/>
+                <constraint firstAttribute="trailing" secondItem="1kS-IF-cjk" secondAttribute="trailing" id="6kO-ev-qRg"/>
+                <constraint firstAttribute="bottom" secondItem="Hz7-5D-xVd" secondAttribute="bottom" id="7i7-fi-4ah"/>
+                <constraint firstItem="Hz7-5D-xVd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Bve-8h-5ey"/>
+                <constraint firstItem="1kS-IF-cjk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TTL-sM-9ex"/>
+                <constraint firstItem="l3S-71-D9b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="UnQ-Ez-5dk"/>
+                <constraint firstItem="Hz7-5D-xVd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VMS-eg-FNP"/>
+                <constraint firstItem="x5r-dL-u26" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bSQ-jS-7lh"/>
+                <constraint firstAttribute="trailing" secondItem="Hz7-5D-xVd" secondAttribute="trailing" id="c5l-CY-a2R"/>
+                <constraint firstItem="1kS-IF-cjk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f6r-3p-txe"/>
+                <constraint firstAttribute="bottom" secondItem="x5r-dL-u26" secondAttribute="bottom" constant="10" id="gYX-A3-eUV"/>
+                <constraint firstItem="l3S-71-D9b" firstAttribute="top" secondItem="1kS-IF-cjk" secondAttribute="bottom" constant="10" id="lVf-Hc-rm2"/>
+                <constraint firstAttribute="trailing" secondItem="x5r-dL-u26" secondAttribute="trailing" id="lyJ-ZF-WjM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pictureView" destination="1kS-IF-cjk" id="DEA-Eu-dGt"/>
+                <outlet property="textView" destination="l3S-71-D9b" id="5d3-eI-yjG"/>
+            </connections>
+            <point key="canvasLocation" x="369" y="370.5"/>
+        </view>
+    </objects>
+</document>
